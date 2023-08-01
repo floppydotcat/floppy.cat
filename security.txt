@@ -1,0 +1,6 @@
+Contact: mailto:hello@floppy.cat
+Contact: https://community.floppy.cat
+Expires: 2222-02-22T22:22:22.000Z
+Acknowledgments: https://floppy.cat
+Preferred-Languages: fr,en
+ Canonical: https://floppy.cat/.well-known/security.txt

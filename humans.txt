@@ -1,0 +1,10 @@
+/* SITE */
+    Site name: Floppy.cat
+    Site URL: https://floppy.cat
+    Contact: hello [at] floppy [dot] cat
+	Contact: community [dot] floppy [dot] cat
+    
+    Editor: Misoss
+    URL: https://misoss.net
+    Contact : https://community.floppy.cat
+    Location: France

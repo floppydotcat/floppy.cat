@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="cat">
+<head>
+    <meta charset="utf-8">
+    <title>Floppy.Cat - Català</title>
+    <style>
+@font-face {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/font/IndieFlower.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+    </style>
+    <style>body{font-family: 'Indie Flower', cursive;font-size: 1rem;}</style>
+</head>
+<body>
+    <img id="randomImage_head"><br/><br/>
+
+En un món llunyà i misteriós, on les estrelles brillen en un firmament etern, una estranya i fascinant criatura es prepara per a una aventura inoblidable. Aquesta criatura es coneix com a Floppy, una Ventrexian meitat gat i meitat cíborg que va abandonar el seu planeta natal per explorar les galàxies més llunyanes.<br/>
+<br/>
+Floppy és un lluitador temible, equipat amb un vestit de combat espacial negre i platejat, adornat amb plaques metàl·liques que reflecteixen la llum de les estrelles. Les seves botes negres i els guants de fulles retràctils afegeixen un toc de perill i misteri a la seva personalitat ja intrigant.<br/>
+<br/>
+Però el que crida l'atenció de Floppy són les seves marques distintives: un pegat de pelatge negre i marró al voltant de l'ull esquerre que s'estén fins al nas, donant a la seva cara un aspecte únic, gairebé felí. Els seus hipnòtics ulls d'ametlla blau clar reflecteixen la seva determinació i intel·ligència.<br/>
+<br/>
+Floppy no és només una criatura, és una guerrera d'elit, dotada d'una força i agilitat sobrehumanas, així com d'un intel·lecte excepcional. Va deixar el seu planeta per buscar nous reptes i aventures emocionants, i la seva recerca la va portar per galàxies desconegudes i mons estranys.
+<br/><br/>
+Amb el seu vestit de batalla steampunk elegant i funcional, Floppy està preparat per afrontar qualsevol repte que se li presenti en el seu viatge interestel·lar. Ja sigui protegint els febles i oprimits, o explorant nous mons i cultures, Floppy està preparat per afrontar qualsevol cosa amb coratge i determinació. La seva propera aventura promet ser tan emocionant com perillosa, però amb Floppy al capdavant, res és impossible.<br/>	
+
+<img id="randomImage_foot"><br/><br/>
+
+<blockquote style="display:none;visibility:hidden;">
+    Le catalan (en catalan : català), est une langue romane, parlée par des millions de personnes dans la partie orientale de l'Espagne (la Catalogne, la Communauté valencienne — localement nommé « valencien » —, aux Îles Baléares, et dans la Frange d'Aragon), en Andorre et aussi dans les Pyrénées-Orientales en France et en Italie . 
+    Il est issu du latin vulgaire introduit au IIe siècle av. J.-C. par les colons romains au nord-est de la péninsule Ibérique et au sud de la Gaule narbonnaise. 
+    Apparenté au groupe gallo-roman, il est très proche de l’occitan, en particulier le dialecte languedocien, avec laquelle il partage une même origine et une tradition littéraire ancienne, mais présente aussi des traits qui le rapprochent du groupe ibéro-roman. 
+</blockquote>
+
+<script>
+
+
+    function showRandomImage(imageList,elId) {
+        var randomIndex = Math.floor(Math.random() * imageList.length);
+        var randomImagePath = imageList[randomIndex];
+        var randomImageElement = document.getElementById(elId);    
+
+      randomImageElement.style.opacity = 0; // Effectue une transition de fade-out
+
+      // Attend 500 millisecondes pour laisser le temps de la transition
+      setTimeout(function() {
+        randomImageElement.src = randomImagePath;  // Change le chemin de l'image
+        randomImageElement.style.opacity = 1;// Effectue une transition de fade-in
+        console.log('ping.showRandomImage(elId:'+elId+'):');
+      }, 500);
+    }
+      
+      function showRandomOneImage(imageList,elId) {
+        var randomIndex = Math.floor(Math.random() * imageList.length);
+      var randomImagePath = imageList[randomIndex];
+      var randomImageElement = document.getElementById(elId);    
+        // Générer un index aléatoire
+        var indexAleatoire = Math.floor(Math.random() * listeImages.length);
+      
+        // Récupérer le chemin de l'image correspondant à l'index aléatoire
+        var cheminImage = listeImages[indexAleatoire];
+      
+        // Afficher l'image dans la page HTML
+        var imageElement = document.createElement("img");
+        imageElement.src = cheminImage;
+        document.body.appendChild(imageElement);
+      }
+    </script>
+
+<script>
+    var picts = [
+        '/assets/img/floppy-cat-manga.imgai.jpg',
+        '/assets/img/floppy-cat-bot.imgai.jpg',
+        '/assets/img/floppy-cat.imgcai (1).webp',
+        '/assets/img/floppy-cat.imgcai (2).webp',
+        '/assets/img/floppy-cat.imgcai (3).webp',
+        '/assets/img/floppy-cat.imgcai (4).webp',
+        '/assets/img/floppy-cat.imgcai (5).webp',
+        '/assets/img/floppy-cat.imgcai (6).webp',
+        '/assets/img/floppy-cat.imgcai (7).webp',
+        '/assets/img/floppy-cat.imgcai (8).webp',
+    ];
+
+    // run
+    window.onload = function(){
+        showRandomImage(picts, 'randomImage_head');
+        showRandomImage(picts, 'randomImage_foot');
+    }
+</script>
+</body>
+</html>

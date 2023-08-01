@@ -1,0 +1,18 @@
+RewriteEngine On
+# Fix www
+RewriteCond %{HTTP_HOST} ^floppy\.cat$ [NC]
+RewriteRule ^(.*)$ http://www.floppy.cat/$1 [R=301,L]
+
+# Rabbit-Hole
+RewriteRule ^wp/(.*)$ http://security.floppy.cat/$1 [L,R=301]
+RewriteRule ^wp-admin/(.*)$ http://security.floppy.cat/$1 [L,R=301]
+RewriteRule ^wp-includes/(.*)$ http://security.floppy.cat/$1 [L,R=301]
+RewriteRule ^wp-content/(.*)$ http://security.floppy.cat/$1 [L,R=301]
+RewriteRule ^wordpress/(.*)$ http://security.floppy.cat/$1 [L,R=301]
+
+# Temp
+RewriteRule ^blog/(.*)$ http://blog.floppy.cat/blog/$1 [L,R=301]
+RewriteRule ^divertisstement/(.*)$ http://blog.floppy.cat/divertissement/$1 [L,R=301]
+RewriteRule ^insolite/(.*)$ http://blog.floppy.cat/insolite/$1 [L,R=301]
+RewriteRule ^nsfw/(.*)$ http://blog.floppy.cat/nsfw/$1 [L,R=301]
+RewriteRule ^arts_et_culture/(.*)$ http://blog.floppy.cat/arts_et_culture/$1 [L,R=301]

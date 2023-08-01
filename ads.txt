@@ -1,0 +1,7 @@
+#Informations : <CONTACT, SUBDOMAIN, INVENTORYPARTNERDOMAIN, MANAGERDOMAIN and OWNERDOMAIN>
+ownerdomain=floppy.cat
+contact=hello@floppy.cat
+contact=https://community.floppy.cat
+
+#< SSP/Exchange Domain >, < SellerAccountID >, < PaymentsType >, < TAGID >
+floppy.cat, FLP-0000-0000-0000-001, DIRECT, AEC242
